@@ -9,7 +9,24 @@
 # What to backup. 
 backup_files=$2
 
+# The first argument which is supposed to be the username
 USER=$1
+
+usage()
+{
+	printf "Usage: $0 username '/home /etc /opt' \n"
+	exit 0
+}
+
+if [ -z "$back_up_files" ]
+then
+	usage
+fi
+
+if [ -z "$USER" ]
+then
+	usage
+fi
 
 # Where to backup to.
 dest="/media/$USER/BackupDrive"
