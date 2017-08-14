@@ -1,4 +1,4 @@
-Simple utilities which I use to sign and align android apk's; backup and restore my linux machine.
+Simple utilities which I use to sign and align android apk's; backup and restore my linux machine and compile static/shared C/C++ libraries.
 
 #### sign.sh
     Change line 42:
@@ -23,3 +23,10 @@ chmod +x restore.sh
 chmod +x backup.sh
 ./backup.sh benedict "/home /etc /opt"
 ### Outputs: a file named backup- followed by username and date where username == benedict above; changed it to your username.
+
+## libcompile.sh
+
+chmod +x libcompile.sh
+./libcompile.sh static mylibrary.c mylibrary.a
+    OR
+./libcompile.sh dynamic mylibrary.c mylibrary.so
