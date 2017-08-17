@@ -20,12 +20,6 @@ then
 	usage
 fi
 
-if [ ! -e "$program" ]
-then
-	echo "No such file of directory: $program"
-	exit 1
-fi
-
 if [ "$libtype" == "static" ]
 then
 	gcc -Wall -Werror -c $program
