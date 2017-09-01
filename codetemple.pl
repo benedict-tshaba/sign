@@ -41,7 +41,8 @@ $comment_tag[1]
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-	printf("Hullo, World!\n");
+	printf("Hullo, World!");
+	puts("");
 	return 0;
 }
 EOC
@@ -54,7 +55,7 @@ $comment_tag[1]
 #include <iostream>
 
 int main(int argc, char *argv[]) {
-	std::cout << "Hullo, World!\n" << std::endl;
+	std::cout << "Hullo, World!" << std::endl;
 	return 0;
 }
 EOC
